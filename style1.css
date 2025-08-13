@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --light-gray: #ccc;
+    --page-bg: #f5f5f5;
+    --content-bg: white;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--page-bg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 11pt;
+}
+
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1.5cm;
+    margin: 1cm 0;
+    background-color: var(--content-bg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* --- HEADER --- */
+.header {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28pt;
+    font-weight: 400;
+}
+
+.header .contact-info {
+    margin: 5px 0 0 0;
+    font-size: 10pt;
+    color: var(--secondary-color);
+}
+
+/* --- LAYOUT --- */
+.main-content {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.left-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+}
+
+/* --- GENERAL SECTION STYLING --- */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 14pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 5px;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+}
+
+/* Removed the separate right-column h2 styling to make all headers consistent */
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* --- EXPERIENCE & PROJECTS --- */
+.job,
+.project {
+    margin-bottom: 15px;
+}
+
+.job-title,
+.project-title {
+    font-size: 12pt;
+    font-weight: 700;
+    margin: 0;
+}
+
+.date-location {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin: 3px 0 8px 0;
+    font-size: 10pt;
+}
+
+/* --- RIGHT COLUMN --- */
+.education-item p,
+.skills-list p,
+.course-list p,
+.societies-list p,
+.links-list p {
+    margin: 4px 0;
+}
+
+.education-item .university {
+    font-weight: 700;
+    font-size: 12pt;
+}
+
+.education-item p {
+    margin: 2px 0;
+}
+
+.skills-list strong {
+    display: inline-block;
+    width: 100px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- PRINT STYLES --- */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    body {
+        background-color: var(--content-bg);
+    }
+    
+    .page {
+        margin: 0;
+        box-shadow: none;
+        padding: 1cm;
+    }
+}
