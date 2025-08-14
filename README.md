@@ -1,1 +1,1 @@
-Badme ban lunga
+Badme bna lunga readme
