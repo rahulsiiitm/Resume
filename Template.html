@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Isabella Adams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .print-container {
+            width: 210mm !important;
+            height: 297mm !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            margin: 0 auto;
+            page-break-inside: avoid;
+            overflow: hidden;
+            font-size: 22px !important;
+            line-height: 1.8 !important;
+            background-image: url('svg.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                background: none !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                width: 210mm;
+                height: 297mm;
+            }
+
+            body>*:not(.print-container) {
+                display: none !important;
+            }
+
+            .print-container {
+                width: 210mm !important;
+                height: 297mm !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                margin: 0 auto;
+                page-break-inside: avoid;
+                overflow: hidden;
+                font-size: 22px !important;
+                line-height: 1.8 !important;
+            }
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: white;
+            font-size: 22px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            font-size: 2.4em !important;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.0em !important;
+            font-weight: 700;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 1.8em !important;
+            font-weight: 600;
+        }
+
+        p,
+        li,
+        span,
+        a {
+            font-size: 1.3em !important;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 to-blue-200 min-h-screen p-0 flex items-center justify-center">
+    <div class="print-container w-210px bg-white overflow-hidden flex flex-col">
+        <!-- Header -->
+        <div class="p-5 pb-3 flex flex-row items-start justify-between gap-4 text-[14px] text-blue-900">
+            <!-- Left Content -->
+            <div class="flex flex-col w-full">
+                <div class="font-semibold text-[18px]">Isabella Adams</div>
+                <div class="text-[10.5px] text-blue-400">
+                    Educational Leader | Curriculum Development | Innovative Teaching
+                </div>
+                <div class="flex flex-wrap gap-3 text-[8px] text-black mt-1">
+                    <div class="flex flex-wrap gap-3 text-[8px] text-black mt-1">
+                        <a href="tel:+12345551234" class="hover:underline">(+1) 234-555-1234</a>
+                        <a href="mailto:help@stargatez.com" class="hover:underline">help@stargatez.com</a>
+                        <a href="https://linkedin.com/" target="_blank" class="hover:underline">linkedin.com/</a>
+                        <a href="https://www.google.com/maps/place/Los+Angeles,+California" target="_blank"
+                            class="hover:underline">Los Angeles, California</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Side Profile Image -->
+            <div class="flex-shrink-0 pr-8">
+                <img src="profile.jpg" alt="Profile Photo"
+                    class="w-21 h-20 rounded-full object-cover border-2 border-blue-400">
+            </div>
+        </div>
+
+
+        <!-- Main content -->
+        <div class="flex flex-row flex-grow">
+
+            <!-- Left column -->
+            <div class="w-[62%] p-4 pt-2 flex flex-col gap-4">
+
+                <!-- Experience -->
+                <div>
+                    <div class="text-[11px] font-semibold mb-1">EXPERIENCE</div>
+                    <div class="text-blue-900 text-[10.5px] font-semibold">Senior Curriculum Coordinator</div>
+                    <div class="flex flex-wrap gap-x-2 text-[9px] text-black mb-1">
+                        <span>Los Angeles Unified School District</span>
+                        <span>01/2019 - Present</span>
+                        <span>Los Angeles, CA</span>
+                    </div>
+                    <ul class="list-disc pl-4 text-[9px] text-gray-700 leading-tight">
+                        <li>Spearheaded the redesign of the district's STEM curriculum, increasing student engagement by
+                            25% through integrated project-based learning initiatives.</li>
+                        <li>Managed the evaluation and implementation of new teaching software across 50+ schools,
+                            impacting over 30,000 students, resulting in a 15% uptick in standardized test scores.</li>
+                        <li>Led a team of 20 educators to develop an inclusive education program that accommodates
+                            the diverse learning needs of students district-wide.</li>
+                        <li>Coordinated with technology vendors to roll out digital learning tools and resources which
+                            were utilized by over 1,200 teachers district-wide.</li>
+                        <li>Implemented comprehensive training programs for teachers, enhancing their skills in
+                            data-driven instruction.</li>
+                        <li>Conducted in-depth analysis of curriculum effectiveness, presenting findings to senior
+                            administrators that directly influenced the allocation of a $2M annual budget.</li>
+                    </ul>
+
+                    <div class="mt-2 text-blue-900 text-[10.5px] font-semibold">Advanced Placement Coordinator</div>
+                    <div class="flex flex-wrap gap-x-2 text-[9px] text-black mb-1">
+                        <span>Green Dot Public Schools</span>
+                        <span>08/2015 - 12/2018</span>
+                        <span>Los Angeles, CA</span>
+                    </div>
+                    <ul class="list-disc pl-4 text-[9px] text-gray-700 leading-tight">
+                        <li>Increased Advanced Placement (AP) exam pass rates by 20% through strategic teacher
+                            mentorship and resource allocation.</li>
+                        <li>Increased Advanced Placement (AP) exam pass rates by 20% through strategic teacher
+                            mentorship and resource allocation.</li>
+                        <li>Developed and oversaw the annual AP audit, ensuring compliance with College Board standards
+                            and sustaining the school's accreditation.
+                        </li>
+                        <li>Streamlined communication between departments, resulting in a 30% increase in
+                            cross-department project collaboration.
+                        </li>
+                        <li>Facilitated workshops on the integration of technology in AP curriculum, reaching over 100
+                            educators and supporting differentiated learning.
+                        </li>
+                    </ul>
+
+                    <div class="mt-2 text-blue-900 text-[10.5px] font-semibold">Science Department Chair</div>
+                    <div class="flex flex-wrap gap-x-2 text-[9px] text-black mb-1">
+                        <span>Alliance College-Ready Public Schools</span>
+                        <span>09/2011 - 07/2015</span>
+                        <span>Los Angeles, CA</span>
+                    </div>
+                    <ul class="list-disc pl-4 text-[9px] text-gray-700 leading-tight">
+                        <li>Revised the science department's assessment strategy to include formative assessments with a
+                            22% improvement in student performance.
+                        </li>
+                        <li>Secured a grant worth $50,000 for laboratory upgrades, directly enhancing learning
+                            environments for over 800 students.
+                        </li>
+                        <li>Initiated a partnership with a local tech company to provide real-world STEM experiences for
+                            students.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <div class="text-[11px] font-semibold mb-1">EDUCATION</div>
+                    <div class="text-blue-900 text-[10.5px] font-semibold">Bachelor of Science in Biology</div>
+                    <div class="text-[9px]">University of California, Berkeley</div>
+                    <div class="flex flex-wrap gap-x-2 text-[9px]">
+                        <span>01/2007 - 01/2011</span>
+                        <span>Berkeley, CA</span>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div>
+                    <div class="text-[11px] font-semibold mb-1">SKILLS</div>
+                    <div class="grid grid-cols-2 gap-x-2 gap-y-1 text-[8px] font-semibold">
+                        <span>Curriculum Development</span>
+                        <span>Educational Leadership</span>
+                        <span>Project-Based Learning</span>
+                        <span>Standardized Testing</span>
+                        <span>Stakeholder Management</span>
+                        <span>Teacher Training</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <div class="text-[11px] font-semibold mb-1">LANGUAGES</div>
+                    <div class="flex gap-6 text-[9px] font-semibold">
+                        <span>English</span>
+                        <span>Spanish</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="w-[38%] p-4 pt-2 flex flex-col gap-4">
+
+                <!-- Summary -->
+                <div>
+                    <div class="text-[11px] font-semibold mb-1">SUMMARY</div>
+                    <div class="text-[9px] text-gray-600 leading-tight">
+                        Passionate educator with over three years of impactful teaching and leadership experience,
+                        holding a Masters degree in Education. Specializing in curriculum development and
+                        student-specific pedagogy. Strong track record of fostering student success and enhancing
+                        academic programs.
+                    </div>
+                </div>
+
+                <!-- Key Achievements -->
+                <div>
+                    <div class="text-[11px] font-semibold mb-1">KEY ACHIEVEMENTS</div>
+                    <div class="flex flex-col gap-2 text-blue-900 text-[9px]">
+                        <div>
+                            <div class="flex items-center gap-1">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span>AP Program Expansion</span>
+                            </div>
+                            <div class="text-black text-[8.5px] leading-tight">Led the expansion of the AP program to
+                                include 5 new subjects, directly contributing to a 20% improvement in college readiness
+                                scores.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span>STEM Curriculum Innovator</span>
+                            </div>
+                            <div class="text-black text-[8.5px] leading-tight">Pioneered a district-wide STEM initiative
+                                that produced a 25,000 grant for the school and was replicated in five neighboring
+                                school districts.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span>Inclusive Education Advocate</span>
+                            </div>
+                            <div class="text-black text-[8.5px] leading-tight">Designed and implemented a district-level
+                                inclusive education strategy that earned a recognition from the National Association for
+                                Special Education Teachers.
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span>Grant Acquisition for Science Dept</span>
+                            </div>
+                            <div class="text-black text-[8.5px] leading-tight">Secured $100,000+ in grants for
+                                departmental enhancements and professional development resources.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courses -->
+                <div>
+                    <div class="text-[11px] font-semibold mb-1">COURSES</div>
+                    <div class="flex flex-col gap-1 text-blue-900 text-[9px]">
+                        <div>
+                            <span>Leadership in Educational Organizations
+                            </span>
+                            <div class="text-black text-[8.5px] leading-tight">Led the expansion of the AP program to
+                                include 5 new subjects, directly contributing to a 20% improvement in college readiness
+                                scores.
+                            </div>
+                        </div>
+                        <div>
+                            <span>Digital Tools for Classroom Engagement</span>
+                            <div class="text-black text-[8.5px] leading-tight">Professional certification from the
+                                International Society for Technology in Education, emphasizing the integration of
+                                digital tools in curriculum.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Passions -->
+                <div>
+                    <div class="text-[11px] font-semibold mb-1">PASSIONS</div>
+                    <div class="flex flex-col gap-2 text-blue-900 text-[9px]">
+                        <div>
+                            <div class="flex items-center gap-1">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span>Educational Technology</span>
+                            </div>
+                            <div class="text-gray-600 text-[8.5px] leading-tight">Leveraging technology to enhance
+                                learning experiences for students of all backgrounds.</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span>STEM Tutoring</span>
+                            </div>
+                            <div class="text-gray-600 text-[8.5px] leading-tight">Volunteer for community STEM programs
+                                supporting underrepresented students.</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                <span>Continuous Professional Development</span>
+                            </div>
+                            <div class="text-gray-600 text-[8.5px] leading-tight">Committed to lifelong learning and
+                                regularly attending seminars and workshops focused on curriculum development and
+                                instructional leadership.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="p-2 flex items-center justify-between text-[8.5px]">
+            <a href="https://stargatez.com/home" target="_blank"
+                class="text-black no-underline">https://stargatez.com</a>
+            <div class="flex items-center gap-1">
+                <div class="w-16 h-4"><img src="logo.png" alt="logo"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
